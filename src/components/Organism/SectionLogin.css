@@ -1,0 +1,21 @@
+#login_section {
+    width: 30%;
+    height: 450px;
+    border: 3px #5c989c solid;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5b7b9;
+
+    box-shadow: -2px 3px 36px -8px rgba(0,0,0,1);
+    -webkit-box-shadow: -2px 3px 36px -8px rgba(0,0,0,1);
+    -moz-box-shadow: -2px 3px 36px -8px rgba(0,0,0,1);
+
+font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-top: -24px;
+}
