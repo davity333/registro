@@ -7,7 +7,8 @@ function usuarios() {
     const [password, setPassword] = useState ("");
     const [email, setEmail] = useState ("");
     const [pila, setPila] = useState([]);
- 
+    const [texto, setTexto] = useState("");
+
     const handleButtonClick = () => {
         if (usuary === "" || password === "" || email === "") {
             
@@ -32,6 +33,7 @@ function usuarios() {
       let registro = { usuario: usuary, Contraseña: password, Email: email };
 
       setPila(prevPila => [...prevPila, registro]);
+      setTexto(`Usuario: ${usuary}, Contraseña: ${password}, Email: ${email}`);
 
         console.log([...pila, registro]);
       
@@ -46,6 +48,7 @@ function usuarios() {
         usuary,
         password,
         email,
+        texto,
         setUsuary,
         setPassword,
         setEmail,

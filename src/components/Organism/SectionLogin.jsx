@@ -7,10 +7,11 @@ import Taza from "../Atoms/Taza";
 import Chuy from "../Atoms/Chuy";
 import usuarios from "../data/usuarios";
 import React from "react";
+import Registro from "../Atoms/Registro";
 
 //CUADRO COMPLETO
 function SectionLogin() {
-    const { usuary, password, email, setUsuary, setPassword, setEmail, handleButtonClick } = usuarios();
+    const { usuary, password, email, texto, setUsuary, setPassword, setEmail, handleButtonClick } = usuarios();
     return (
         <>
         <Text p="Registrate para acceder a la tienda y recibir notificaciones de nuevos episodios"/>
@@ -25,6 +26,7 @@ function SectionLogin() {
         </div>  
             <Taza></Taza>
             <Chuy></Chuy>
+            <Registro span={texto}></Registro>
         </>
         
      );
