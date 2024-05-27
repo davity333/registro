@@ -8,13 +8,14 @@ import Chuy from "../Atoms/Chuy";
 import usuarios from "../data/usuarios";
 import React from "react";
 import Registro from "../Atoms/Registro";
-
+import Davity from "../Atoms/Davity";
+import Diseño from "../Molecules/Diseño";
 //CUADRO COMPLETO
 function SectionLogin() {
-    const { usuary, password, email, texto, setUsuary, setPassword, setEmail, handleButtonClick } = usuarios();
+    const { usuary, password, email, texto, setUsuary, setPassword, setEmail, Click } = usuarios();
     return (
         <>
-        <Text p="Registrate para acceder a la tienda y recibir notificaciones de nuevos episodios"/>
+        
         <div id="login_section">
             
             <Logo></Logo>
@@ -22,11 +23,14 @@ function SectionLogin() {
             <Field value={usuary} type="text"   placeholder="Usuario" text="Usuario" onChange={(e) => setUsuary(e.target.value)}/>
             <Field value={password} type="password"  placeholder="Contraseña" text="Contraseña" onChange={(e) => setPassword(e.target.value)}/>
             <Field value={email} type="text"  placeholder="Correo electronico" text="Email" onChange={(e) => setEmail(e.target.value)}/>
-            <Button onClick={handleButtonClick}></Button>
+            <Button onClick={Click}></Button>
         </div>  
-            <Taza></Taza>
-            <Chuy></Chuy>
-            <Registro span={texto}></Registro>
+
+        
+        <Diseño></Diseño>
+        <Registro span={texto}></Registro>
+
+            
         </>
         
      );

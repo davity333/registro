@@ -2,7 +2,7 @@ import Input from "../Atoms/Input";
 import Label from "../Atoms/Label";
 
 //CAMPOS DE TEXTO CON NOMBRES
-function Field(props,id,value,type,onChange,placeholder) {
+function Field(props) {
     return (
         
         <div style={{width:"80%"}}>

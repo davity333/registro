@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Swal from 'sweetalert2';
 function usuarios() {
@@ -9,7 +8,7 @@ function usuarios() {
     const [pila, setPila] = useState([]);
     const [texto, setTexto] = useState("");
 
-    const handleButtonClick = () => {
+    const Click = () => {
         if (usuary === "" || password === "" || email === "") {
             
             Swal.fire({
@@ -52,7 +51,7 @@ function usuarios() {
         setUsuary,
         setPassword,
         setEmail,
-        handleButtonClick,
+        Click,
       };
 }
 export default usuarios;

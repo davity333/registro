@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const ImgStyled = styled.img`
     height: 500px;
-    margin-left: 84%;
+    margin-left: 79%;
    position: absolute;
    margin-top: 4px;
 
